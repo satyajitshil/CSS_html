@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<h2>POSITIONING X,Y,Z</h2>
+<style>
+    div{
+        width: 500px;
+        height:   100px;
+        border: 10px solid ;
+    }
+    div.sticky{
+        position: sticky;
+        width: 500px;
+        height:   100px;
+        border: 10px solid goldenrod;
+        color: antiquewhite;
+        background-color: black;
+        right: 100px;
+    }
+    div.fixed{
+        position: fixed;
+        width: 500px;
+        height:   100px;
+        border: 10px solid red;
+        color: antiquewhite;
+        background-color: black;
+    }
+    div.relative{
+        position: relative;
+        width: 500px;
+        height:   100px;
+        border: 10px solid darkblue;
+        color: antiquewhite;
+        background-color: black;
+        left: 150px;
+    }
+    div.absolute{
+        position: absolute;
+        width: 250px;
+        height: 50px;
+        border: 10px solid rgb(255, 32, 177);
+        color: antiquewhite;
+        background-color: black;
+        left: 150px;
+
+    }
+</style>
+<div>Static POSITIONING</div>
+<div class="sticky">Sticky POSITIONING</div>
+<div class="fixed">Fixed  POSITIONING</div>
+<div class="relative">Relative POSITIONING   
+    <div class="absolute">Absolute POSITIONING</div>
+</div>
+</html>
