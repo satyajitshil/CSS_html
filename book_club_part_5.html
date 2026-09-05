@@ -1,0 +1,159 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book CLub Website</title>
+    <style>
+        body{
+            background-color: cornsilk;
+            margin: 30px 40px;
+            border: 10px solid darkgreen;
+            padding: 25px;
+        }
+        nav ul{
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        div{
+            background-color: beige;
+        }
+        #mustreads{color: crimson;}
+
+        table,
+        th,
+        td{
+            border: 1px solid black;
+        }
+        nav:hover{
+            background-color: burlywood;
+        }
+        tr:nth-last-child(2){
+            color: blue;
+        }
+        tr:last-child{
+            color: blue;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li a{
+            text-decoration: none;
+            color: blue;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        li a:hover{
+            color: crimson;
+        }
+        p{
+            font-size: 18px;
+        }
+        h3{
+            font-size: 20px;
+            font-family: fantasy;
+            text-decoration: underline;
+        
+        }
+        header{
+            grid-area: header;
+        }
+        nav{
+            grid-area: nav;
+        }
+        #intro{
+            grid-area: intro;
+        }
+        #mustreads{
+            grid-area: mreads;
+        }
+        footer{
+            grid-area: footer;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-areas: "header header header mreads "
+                                 "nav nav nav mreads"
+                                 "intro intro intro intro";
+        }
+    </style>
+    
+</head>    
+    <body>
+        <div class="grid-container">
+        <header>
+        <h1>Mount Caramel Book Club</h1>
+        <img src="books.avif" alt="Image of Books" style="width: 300px;height: 300px;">
+        </header>
+        <nav>
+        <ul>
+            <li><a href="book_club_CSS.html">Home</a></li>
+            <li><a href="fifa_1.html">Current Events</a></li>
+            <li><a href="#">Donors</a></li>
+            <li><a href="#">Contact Us!</a></li>
+        </ul>
+        </nav>
+        <audio controls autoplay>
+            <source src="Drums.mp3" type="audio/mpeg">
+            This browser does not support this audio file.
+        </audio> 
+        <div id="intro">
+        <h2>Welcome to the Mount View Book Club</h2>
+        <p>The Mount Caramel Book Club is an online community of book readers in Mount Caramel School</p>
+        <h2>Meet our Teachers!</h2>
+        <img src="teacher.jpg" alt="Image of Teachers" style="width: 200px; height: 150px;">
+        <h3>Ms. Emily</h3>
+        <p>She has a bachelor degree in literature</p>
+        <h3>Mr. Joan</h3>
+        <p>He has a Master in Arts degree in literature and poetry</p>
+        <h2>Book Reviews</h2>
+        <h3>The Player King</h3>
+        <p><b>Anny:</b> I loved this book. Its plot twists makes it interesting</p>
+        <p><b>Oliver:</b> Everyone should read this book! It's so good!</p>
+        <h2> Opening Timings</h2>
+        <table>
+            <tr>
+                <th>Monday </th><td>11:30 am - 3:00 pm</td>
+            </tr>        
+            <tr>
+                <th>Tuesday </th><td>11:30 am - 3:00 pm</td>
+            </tr>        
+            <tr>
+                <th>Wednesday </th><td>11:30 am - 3:00 pm</td>
+            </tr>        
+            <tr>
+                <th>Thursday </th><td>11:30 am - 3:00 pm</td>
+            </tr>        
+            <tr>
+                <th>Friday </th><td>11:30 am - 1:00 pm</td>
+            </tr>        
+            <tr>
+                <th>Saturday </th><td>Closed</td>
+            </tr>        
+            <tr>
+                <th>Sunday </th><td>Closed</td>
+            </tr> 
+        </table>   
+        <video controls>
+            <source src="Screen Recording 2026-01-13 at 8.44.43 PM.mov" type="video/quicktime">
+            This browser does not support this video file.
+        </video>
+        </div>         
+        <div id="mustreads">   
+        <h2>Must Reads</h2>
+        <p><strong>The Adventures of Tom Sawyer</strong><i> by Mark Twain</i></p>
+        <p><strong>The Thing from the Moon</strong><i> from Anne Murry</i></p>
+        <p><strong>Percy Jackson and the Olympians: The Lightning Thief</strong><i> by Rick Riodian</i></p>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KdjpQrWUtqk?si=ZBPPgXf97DZhQ_q_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <footer>
+        <h2>Contact Info</h2>
+        <p>Call us: Ms. Carol</p>
+        <p>Phone Number: +1(652)853-0986
+        <p><i>45th Maine, Palm Street, Sacramento, California</i></p>
+        </footer>    
+    </div>
+    </body>
+</html>
